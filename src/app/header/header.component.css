@@ -1,0 +1,15 @@
+.dark-background {
+    background-color: black;
+}
+
+@media (max-width: 375px) {
+    .drop-left {
+        float: left;
+    }
+}
+
+@media (min-width: 376px) {
+    .drop-left {
+        float: right;
+    }
+}
