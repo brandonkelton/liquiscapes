@@ -13,3 +13,11 @@ export class NavMenuComponent implements OnInit {
   }
 
 }
+
+export function navBarReponsive() {
+  var x = document.getElementById("liquiscapesTopNav");
+  if (x.className === "topnav")
+    x.className += " responsive";
+  else
+    x.className = "topnav";
+}
