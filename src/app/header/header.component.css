@@ -71,3 +71,11 @@
         text-align: left;
     }
 }
+
+.pull-right-drop {
+    float: right;
+}
+
+@media (max-width: 350px) {
+    .pull-right-drop { float: none; }
+}
