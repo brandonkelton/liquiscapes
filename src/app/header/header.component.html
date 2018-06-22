@@ -1,10 +1,22 @@
-<div class="row no-gutters">
-  <div class="col pl-1">
+<div class="sticky header">
+  <div class="row no-gutters">
+    <div class="col pl-1">
       <img src="../../assets/LiquiscapesLogo.PNG" style="height: 65px;"> 
-  </div>
-  <div class="col pr-2">
+    </div>
+    <div class="col pr-2">
       <a class="btn btn-outline-primary btn-sm float-right mt-3" href="tel:720-434-2934">
           <span class="fa fa-phone pl-1 pr-1 pt-1"></span>720-434-2934
       </a>
+    </div>
+  </div>
+  <div class="topnav" id="liquiscapesTopNav">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About Us</a>
+    <a routerLink="/services" routerLinkActive="active">Services</a>
+    <a routerLink="/gallery" routerLinkActive="active">Gallery</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBarReponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </div>
