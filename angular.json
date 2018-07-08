@@ -20,7 +20,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "web.config"
             ],
             "styles": [
               "src/styles.css"
@@ -50,7 +51,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "liquiscapes:build"
+            "browserTarget": "liquiscapes:build",
+            "ssl": false
           },
           "configurations": {
             "production": {
