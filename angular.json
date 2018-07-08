@@ -20,18 +20,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/web.config",
-              {
-                "glob": "index.js",
-                "input": "./server/",
-                "output": "./"
-              },
-              {
-                "glob": "package.json",
-                "input": "./server/",
-                "output": "./"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
