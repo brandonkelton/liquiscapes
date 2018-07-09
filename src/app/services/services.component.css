@@ -1,0 +1,40 @@
+.card {
+    width: 20rem; 
+    height: 27rem;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    height: 10rem;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.liqui-left {
+    float: left;
+}
+
+.liqui-margin {
+    margin-right: 10px;
+}
+
+.liqui-padding {
+    padding-top: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img-width {
+    width: 140px;
+    height: 100px;
+}
