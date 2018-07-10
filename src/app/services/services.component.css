@@ -24,8 +24,8 @@ h6 {
     padding-top: 10px;
 }
 
-.clearfix {
-    overflow: auto;
+.clear {
+    clear: both;
 }
 
 .clearfix::after {
