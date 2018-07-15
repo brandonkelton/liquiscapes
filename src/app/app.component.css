@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px) {
+    .main-container {
+        width: 90%;
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main-container {
+        width: 50%;
+        max-width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        display: block;
+    }
+}
+
+.header {
+    background: rgba(255, 255, 255, 1);
+    z-index: 1000;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        width: 50%;
+    }
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+}
+
+.content {
+    padding-top: 100px;
+    position: relative;
+}

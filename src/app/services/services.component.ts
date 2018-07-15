@@ -7,13 +7,6 @@ import { trigger,state,style,transition,animate,keyframes } from '@angular/anima
   styleUrls: ['./services.component.css'],
   animations: [
     trigger('expandCollapse', [
-      // transition(':enter', [
-      //   animate('500ms ease-in')
-      // ]),
-      // transition(':leave', [
-      //   animate('500ms ease-out')
-      // ]),
-      // state('*', style({}))
       state('open', style({
           height: '*',
           opacity: 1
