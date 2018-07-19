@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PresentationBoxComponent } from './presentation-box/presentation-box.component';
 import { ServicesComponent } from './services/services.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     ContactComponent,
     PresentationBoxComponent,
     ServicesComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImageViewerComponent
   ],
   imports: [
     BrowserModule,

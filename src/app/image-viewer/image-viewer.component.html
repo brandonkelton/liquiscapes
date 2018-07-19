@@ -1,0 +1,15 @@
+<div class="slider-container">
+  <div class="slider-content">
+    <div *ngFor="let image of images" class="{{image.currentClasses}}">
+      <p>{{image.isActive}}</p>
+      <img class="slider-single-image" src="{{image.url}}" alt="{{image.title}}"/>
+      <h1 class="slider-single-title">{{image.currentClass}}</h1>
+      <a class="slider-single-likes" href="javascript:void(0);">
+        <i class="fa fa-heart"></i>
+        <p>1234</p>
+      </a>
+    </div>
+  </div>
+  <a class="slider-left" href="javascript:void(0);" (click)="slideLeft()"><i class="fa fa-arrow-left"></i></a>
+  <a class="slider-right" href="javascript:void(0);" (click)="slideRight()"><i class="fa fa-arrow-right"></i></a>
+</div>
