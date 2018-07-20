@@ -19,22 +19,25 @@ export class ImageViewerComponent implements OnInit {
 
     const image1 = new LiquiImage();
     image1.isActive = true;
-    image1.title = 'Title 1';
-    image1.url = '../../assets/waterscapes.jpg';
+    image1.url = '../../assets/images/front-pic-1.jpg';
 
     const image2 = new LiquiImage();
-    image2.isActive = true;
-    image2.title = 'Title 1';
-    image2.url = '../../assets/owner1.jpg';
+    image2.url = '../../assets/images/front-pic-2.jpg';
 
     const image3 = new LiquiImage();
-    image3.isActive = true;
-    image3.title = 'Title 1';
-    image3.url = '../../assets/owner3.jpg';
+    image3.url = '../../assets/images/front-pic-3.jpg';
+
+    const image4 = new LiquiImage();
+    image4.url = '../../assets/images/front-pic-4.jpg';
+
+    const image5 = new LiquiImage();
+    image5.url = '../../assets/images/front-pic-5.jpg';
 
     this.images.push(image1);
     this.images.push(image2);
     this.images.push(image3);
+    this.images.push(image4);
+    this.images.push(image5);
   }
 
   get imageTotal(): number {
@@ -118,9 +121,7 @@ export class ImageViewerComponent implements OnInit {
 
   private startSlide() {
     this.imageCurrent.isActive = true;
-    setTimeout(() => {
-      this.slideRight();
-    }, 500);
+    this.slideRight();
   }
 
   ngOnInit() {

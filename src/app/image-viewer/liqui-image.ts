@@ -58,6 +58,6 @@ export class LiquiImage {
             return 'slider-single proactive';
         }
 
-        return 'mobboss';
+        return 'slider-single';
     }
 }
