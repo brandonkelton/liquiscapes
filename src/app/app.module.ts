@@ -11,6 +11,7 @@ import { PresentationBoxComponent } from './presentation-box/presentation-box.co
 import { ServicesComponent } from './services/services.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
     PresentationBoxComponent,
     ServicesComponent,
     GalleryComponent,
-    ImageViewerComponent
+    ImageViewerComponent,
+    HeaderMenuComponent
   ],
   imports: [
     BrowserModule,
