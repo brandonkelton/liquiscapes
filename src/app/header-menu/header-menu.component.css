@@ -2,8 +2,68 @@
     display: block;
     height: 40px;
     width: 100%;
-    background-color: #d8d8d8;
+    background-color: #d4e2ff;
 }
+
+.nav-button {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d4e2ff;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #a8c5ff;
+    cursor: pointer;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-text {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.small-menu {
+    display: block;
+    float: right;
+}
+
+.active {
+    background-color: #a8c5ff;
+}
+
+@media screen and (max-width: 500px) {
+    .standard-menu-state {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .standard-menu-state {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .small-menu-state {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .small-menu-state {
+        display: none;
+    }
+}
+
+
 
 
 

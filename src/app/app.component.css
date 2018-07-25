@@ -33,18 +33,7 @@
     background: rgba(255, 255, 255, 1);
     z-index: 1000;
     display: block;
-}
-
-@media screen and (max-width: 900px) {
-    .header {
-        width: inherit;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .header {
-        width: inherit;
-    }
+    width: inherit;
 }
 
 .sticky-header {
