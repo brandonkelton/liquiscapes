@@ -1,16 +1,5 @@
-<!-- <div class="topnav" id="liquiscapesTopNav">
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/about" routerLinkActive="active">About Us</a>
-  <a routerLink="/services" routerLinkActive="active">Services</a>
-  <a routerLink="/gallery" routerLinkActive="active">Gallery</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="navBarReponsive()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div> -->
-
 <div class="nav-container">
-  <div class="nav-button" routerLink="/home" routerLinkActive="active">
+  <div class="nav-button" routerLink="/home" routerLinkActive="active" (click)="hideSmallMenu()">
     <span class="nav-text">Home</span>
   </div>
   <div class="nav-button standard-menu-state" routerLink="/about" routerLinkActive="active">
@@ -25,7 +14,22 @@
   <div class="nav-button standard-menu-state" routerLink="/contact" routerLinkActive="active">
     <span class="nav-text">Contact</span>
   </div>
-  <div class="nav-button small-menu small-menu-state">
+  <div class="nav-button small-menu small-menu-state" (click)="toggleSmallMenuVisibility()">
     <i class="fa fa-bars"></i>
+    <div class="{{ smallMenuClasses }}">
+        <div class="small-nav-button" routerLink="/about" routerLinkActive="active">
+          <span class="small-nav-text">About</span>
+        </div>
+        <div class="small-nav-button" routerLink="/services" routerLinkActive="active">
+          <span class="small-nav-text">Services</span>
+        </div>
+        <div class="small-nav-button" routerLink="/gallery" routerLinkActive="active">
+          <span class="small-nav-text">Gallery</span>
+        </div>
+        <div class="small-nav-button" routerLink="/contact" routerLinkActive="active">
+          <span class="small-nav-text">Contact</span>
+        </div>
+      </div>
   </div>
 </div>
+
