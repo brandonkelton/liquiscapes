@@ -9,15 +9,11 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  callPhoneNumber(): void {
+    window.open('tel:3038611314', '_top');
+  }
+
   ngOnInit() {
   }
 
-}
-
-export function navBarReponsive() {
-  var x = document.getElementById("liquiscapesTopNav");
-  if (x.className === "topnav")
-    x.className += " responsive";
-  else
-    x.className = "topnav";
 }

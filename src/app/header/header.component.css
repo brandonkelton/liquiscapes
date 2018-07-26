@@ -20,6 +20,15 @@
     padding-left: 5px;
     padding-bottom: 5px;
     font-size: 14px;
+    color: #3a78ff;
+}
+
+.phone-container:hover {
+    background-color: #3a78ff;
+    font-weight: bold;
+    color: white;
+    text-decoration-line: none;
+    cursor: pointer;
 }
 
 .phone-icon {
