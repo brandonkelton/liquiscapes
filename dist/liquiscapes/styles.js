@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url('https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css');\n@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');\n.small-font {\n    font-size: 14px;\n}\n.liquiscapes-container {\n    padding-top: 300px;\n    display: block;\n    margin-right: auto;\n    margin-left: auto;\n    width: 75%\n}"
+module.exports = "@import url('https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css');\n@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');\n.small-font {\n    font-size: 14px;\n}"
 
 /***/ }),
 

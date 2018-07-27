@@ -1,33 +1,25 @@
 .card {
-    width: 14.2rem; 
-    height: 21rem;
+    width: 16rem; 
+    height: 24rem;
     margin-bottom: 10px;
 }
 
-.card-img-top {
-    height: 10rem;
+.card-img {
+    height: 8rem;
+}
+
+.card-text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card-footer {
+    text-align: center;
 }
 
 h6 {
     font-weight: bold;
 }
-
-/* .liqui-container {
-    display: block;
-    border-bottom-width: 20px;
-    border-bottom-color: black;
-} */
-
-/* @media screen and (max-width: 550px) {
-    .gallery {
-        margin-top: 100px;
-    }
-}
-@media screen and (min-width: 550px) {
-    .gallery {
-        margin-top: 235px;
-    }
-} */
 
 @media screen and (max-width: 550px) {
     .push-down {
@@ -40,15 +32,24 @@ h6 {
     }
 }
 
-@media screen and (max-width: 550px) {
-    .gallery-link-box {
-        margin-top: 100px;
-    }
+.column1 {
+    float: left;
+    width: 25px;
 }
-@media screen and (min-width: 550px) {
-    .gallery-link-box {
-        margin-top: 250px;
-    }
+
+.column2 {
+    float: left;
+    width: 100px;
+}
+
+.row-break {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.indent-15 {
+    text-indent: 15px;
 }
 
 .gallery-link-box {
@@ -64,4 +65,19 @@ h6 {
     border-right: 1px solid #a8a7a5;
     border-bottom: 1px solid #a8a7a5;
     border-left: 1px solid #a8a7a5;
+}
+
+@media screen and (max-width: 550px) {
+    .gallery-link-box {
+        margin-top: 120px;
+    }
+}
+@media screen and (min-width: 550px) {
+    .gallery-link-box {
+        margin-top: 250px;
+    }
+}
+
+a:link:hover {
+    text-decoration-line: none;
 }
