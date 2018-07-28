@@ -18,6 +18,9 @@
 .nav-button:hover {
     background-color: #a8c5ff;
     cursor: pointer;
+    -webkit-transition: background-color 125ms linear;
+    -ms-transition: background-color 125ms linear;
+    transition: background-color 125ms linear;
 }
 
 .nav-button:focus {
