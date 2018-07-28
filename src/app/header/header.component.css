@@ -29,6 +29,9 @@
     color: white;
     text-decoration-line: none;
     cursor: pointer;
+    -webkit-transition: background-color 125ms linear;
+    -ms-transition: background-color 125ms linear;
+    transition: background-color 125ms linear;
 }
 
 .phone-icon {
