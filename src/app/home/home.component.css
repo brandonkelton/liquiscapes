@@ -67,6 +67,10 @@ h6 {
     border-left: 1px solid #a8a7a5;
 }
 
+.center {
+    text-align: center;
+}
+
 @media screen and (max-width: 550px) {
     .gallery-link-box {
         margin-top: 120px;
