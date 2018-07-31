@@ -1,15 +1,15 @@
 <div class="gallery">
   <app-image-viewer></app-image-viewer>
 </div>
-<div class="gallery-link-box">
-  <div>See Our Complete Gallery</div>
+<div routerLink="/gallery" class="gallery-link-box">
+  See Our Complete Gallery
 </div>
 
 
 <div class="push-down">
   <div class="row">
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-      <div class="card mx-auto">
+      <div class="card mx-auto" routerLink="/services">
         <div class="card-body">
           <h6 class="card-title">What We Offer</h6>
           <img class="card-img" src="../../assets/owner2.png" alt="Image of Owner">
@@ -37,12 +37,12 @@
           </div>
         </div>
         <div class="card-footer">
-          <a routerLink="/services">Services</a>
+          Services
         </div>
       </div>
     </div>
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-      <div class="card mx-auto">
+      <div class="card mx-auto" routerLink="/about">
         <div class="card-body">
           <h6 class="card-title">Who We Are</h6>
           <img class="card-img" src="../../assets/owner1.jpg" alt="Image of Owner">
@@ -82,12 +82,12 @@
           </div>
         </div>
         <div class="card-footer">
-            <a routerLink="/about">About</a>
+          About
         </div>
       </div>
     </div>
     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-      <div class="card mx-auto">
+      <div class="card mx-auto" routerLink="/contact">
         <div class="card-body">
           <h6 class="card-title">Contact Us</h6>
           <img class="card-img" src="../../assets/owner3.jpg" alt="Image of Owner">
@@ -98,7 +98,7 @@
           </div>
         </div>
         <div class="card-footer">
-          <a routerLink="/contact">Contact</a>
+          Contact
         </div>
       </div>
     </div>

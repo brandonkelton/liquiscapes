@@ -2,6 +2,7 @@
     width: 16rem; 
     height: 24rem;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .card-img {
@@ -11,14 +12,26 @@
 .card-text {
     margin-left: 20px;
     margin-top: 20px;
+    color: var(--liqui-text);
 }
 
 .card-footer {
     text-align: center;
+    background-color: var(--liqui-background);
+    color: var(--liqui-text);
+    -webkit-transition: background-color 125ms linear;
+    -ms-transition: background-color 125ms linear;
+    transition: background-color 125ms linear;
 }
 
-h6 {
+.card:hover .card-footer {
+    background-color: var(--liqui-background-hover);
+    color: var(--liqui-text-hover);
+}
+
+.card-title {
     font-weight: bold;
+    color: var(--liqui-text);
 }
 
 @media screen and (max-width: 550px) {
@@ -32,24 +45,8 @@ h6 {
     }
 }
 
-.column1 {
-    float: left;
-    width: 25px;
-}
-
-.column2 {
-    float: left;
-    width: 100px;
-}
-
-.row-break {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.indent-15 {
-    text-indent: 15px;
+.center {
+    text-align: center;
 }
 
 .gallery-link-box {
@@ -57,18 +54,22 @@ h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--liqui-background);
     width: 75%;
+    height: 35px;
     padding-top: 5px;
-    color: #000000;
+    color: var(--liqui-text);
     text-align: center;
-    border-top: 1px solid #a8a7a5;
-    border-right: 1px solid #a8a7a5;
-    border-bottom: 1px solid #a8a7a5;
-    border-left: 1px solid #a8a7a5;
+    border-radius: 10px;
 }
 
-.center {
-    text-align: center;
+.gallery-link-box:hover {
+    background-color: var(--liqui-background-hover);
+    color: var(--liqui-text-hover);
+    cursor: pointer;
+    -webkit-transition: background-color 125ms linear;
+    -ms-transition: background-color 125ms linear;
+    transition: background-color 125ms linear;
 }
 
 @media screen and (max-width: 550px) {
@@ -80,8 +81,4 @@ h6 {
     .gallery-link-box {
         margin-top: 250px;
     }
-}
-
-a:link:hover {
-    text-decoration-line: none;
 }

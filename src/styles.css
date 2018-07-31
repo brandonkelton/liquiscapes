@@ -4,3 +4,10 @@
 .small-font {
     font-size: 14px;
 }
+
+:root {
+    --liqui-background: #a6cfff;
+    --liqui-background-hover: #55a4ff;
+    --liqui-text: #000000;
+    --liqui-text-hover: #000000;
+}
