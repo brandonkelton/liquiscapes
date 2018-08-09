@@ -81,3 +81,28 @@
     right: 0px;
     margin-top: -25px;
 }
+
+.image-small {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.image-range-bar {
+    height: 110px;
+    width: 550px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-active {
+    border-style: outset;
+    border-color: gray;
+    border-width: 5px;
+    border-radius: 7px;
+    
+}

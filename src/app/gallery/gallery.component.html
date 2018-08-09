@@ -18,3 +18,10 @@
         <i (click)="imageForward()" class="fa fa-arrow-right arrow"></i>
     </a> 
 </div>
+<div class="image-range-bar">
+    <div class="image-range-group">
+        <img *ngFor="let image of currentGalleryImageRange" 
+            (click)="setImageActive(image.index)"
+            class="image-small {{ image.index === galleryImageIndex ? 'image-active' : '' }}" src="{{ image.url }}"/>
+    </div>
+</div>

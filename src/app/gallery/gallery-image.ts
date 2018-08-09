@@ -1,4 +1,4 @@
 export class GalleryImage {
-    constructor(public url: string) {}
+    constructor(public index: number, public url: string) {}
     name: string;
 }
