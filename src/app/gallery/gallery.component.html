@@ -1,3 +1,20 @@
-<p>
-  gallery works!
-</p>
+<div class="top-bar">
+    <div class="month-selector-container">
+        <i (click)="monthBackward()" class="fa fa-arrow-left arrow-small item-left-spacer"></i>
+        <span class="month-container text-large">
+            {{ currentMonthYear.monthString }} {{ currentMonthYear.year }}
+        </span>
+        <i (click)="monthForward()" class="fa fa-arrow-right arrow-small"></i>
+    </div>
+</div>
+<div class="image-controller">
+    <a class="slider-left" href="javascript:void(0);" (click)="slideLeft()">
+        <i (click)="imageBackward()" class="fa fa-arrow-left arrow"></i>
+    </a>
+    <div class="image-container">
+        <img class="image" src="{{currentGalleryImage.url}}"/>
+    </div>
+    <a class="slider-right" href="javascript:void(0);" (click)="slideRight()">
+        <i (click)="imageForward()" class="fa fa-arrow-right arrow"></i>
+    </a> 
+</div>

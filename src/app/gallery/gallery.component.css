@@ -1,0 +1,83 @@
+.top-bar {
+    position: sticky;
+    top: 0px;
+    margin-top: -47px;
+    height: 50px;
+    text-align: center;
+}
+
+.month-selector-container {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 210px;
+    height: 30px;
+}
+
+.month-container {
+    display: inline-block;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.item-left-spacer {
+    margin-left: 5px;
+}
+
+.item-right-spacer {
+    margin-right: 5px;
+}
+
+.image-controller {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    width: 550px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image {
+    display: inline-block;
+    height: 100%;
+}
+
+.slider-left {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.arrow {
+    font-size: 27px;
+    color: black;
+}
+
+.arrow-small {
+    font-size: 20px;
+    color: black;
+}
+
+.text-large {
+    font-size: 18px;
+}
+
+.slider-right {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    right: 0px;
+    margin-top: -25px;
+}
