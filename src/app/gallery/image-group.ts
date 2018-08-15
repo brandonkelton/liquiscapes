@@ -1,4 +1,4 @@
-export class MonthYear {
+export class ImageGroup {
     
     month: number;
     year: number;

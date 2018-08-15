@@ -2,26 +2,26 @@
     <div class="month-selector-container">
         <i (click)="monthBackward()" class="fa fa-arrow-left arrow-small item-left-spacer"></i>
         <span class="month-container text-large">
-            {{ currentMonthYear.monthString }} {{ currentMonthYear.year }}
+            {{ currentImageGroup.monthString }} {{ currentImageGroup.year }}
         </span>
         <i (click)="monthForward()" class="fa fa-arrow-right arrow-small"></i>
     </div>
 </div>
 <div class="image-controller">
-    <a class="slider-left" href="javascript:void(0);" (click)="slideLeft()">
-        <i (click)="imageBackward()" class="fa fa-arrow-left arrow"></i>
+    <a class="slider-left" href="javascript:void(0);" (click)="imageBackward()">
+        <i class="fa fa-arrow-left arrow"></i>
     </a>
     <div class="image-container">
-        <img class="image" src="{{currentGalleryImage.url}}"/>
+        <img class="image" src="{{currentImage.url}}"/>
     </div>
-    <a class="slider-right" href="javascript:void(0);" (click)="slideRight()">
-        <i (click)="imageForward()" class="fa fa-arrow-right arrow"></i>
+    <a class="slider-right" href="javascript:void(0);" (click)="imageForward()">
+        <i class="fa fa-arrow-right arrow"></i>
     </a> 
 </div>
 <div class="image-range-bar">
     <div class="image-range-group">
-        <img *ngFor="let image of currentGalleryImageRange" 
+        <img *ngFor="let image of imageRange" 
             (click)="setImageActive(image.index)"
-            class="image-small {{ image.index === galleryImageIndex ? 'image-active' : '' }}" src="{{ image.url }}"/>
+            class="image-small {{ image.index === imageIndex ? 'image-active' : '' }}" src="{{ image.url }}"/>
     </div>
 </div>
