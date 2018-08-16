@@ -73,9 +73,13 @@ export class GalleryComponent implements OnInit {
     if (outerRange > 0) {
       for(let i=1;i<=outerRange;i++) {
         const beforeIndex = this.getAdjustedIndex(this.imageIndex - i);
-        images[midIndex - i] = this.currentImages[beforeIndex];
+        if ((midIndex - i) >= 0) {
+          images[midIndex - i] = this.currentImages[beforeIndex];
+        }
         const afterIndex = this.getAdjustedIndex(this.imageIndex + i);
-        images[midIndex + i] = this.currentImages[afterIndex];
+        if ((midIndex + i) <= (this.currentImageCount - 1)) {
+          images[midIndex + i] = this.currentImages[afterIndex];
+        }
       }
     }
     
@@ -116,8 +120,8 @@ export class GalleryComponent implements OnInit {
   }
 
   private getAdjustedIndex(index: number): number {
-    if (index < 0) return ((this.currentImageCount - 1) + index); // this works because index will be negative
-    if (index > (this.currentImageCount - 1)) return (index - (this.currentImageCount - 1));
+    if (index < 0) return (this.currentImageCount + index); // this works because index will be negative
+    if (index > (this.currentImageCount - 1)) return (index - this.currentImageCount);
     return index;
   }
 
