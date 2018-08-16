@@ -30,48 +30,9 @@
     margin-right: 5px;
 }
 
-.image-controller {
-    position: relative;
-    display: block;
-    width: 600px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-container {
-    width: 550px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    overflow: hidden;
-}
-
 .image {
     display: inline-block;
     height: 100%;
-}
-
-.slider-left {
-    position: absolute;
-    width: 25px;
-    top: 50%;
-    margin-top: -25px;
-}
-
-.arrow {
-    font-size: 27px;
-    color: black;
-}
-
-.arrow-small {
-    font-size: 20px;
-    color: black;
-}
-
-.text-large {
-    font-size: 18px;
 }
 
 .slider-right {
@@ -79,30 +40,228 @@
     width: 25px;
     top: 50%;
     right: 0px;
+    margin-left: 10px;
     margin-top: -25px;
 }
 
-.image-small {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.slider-left {
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    margin-right: 10px;
+    margin-top: -25px;
 }
 
-.image-range-bar {
-    height: 110px;
-    width: 550px;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
-    text-align: center;
+.image-arrow {
+    font-size: 27px;
+    color: black;
 }
 
-.image-active {
-    border-style: outset;
-    border-color: gray;
-    border-width: 5px;
-    border-radius: 7px;
-    
+.month-arrow {
+    font-size: 20px;
+    color: black;
+}
+
+.month-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 550px) {
+    .image-controller {
+        position: relative;
+        display: block;
+        width: 325px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-container {
+        width: 250px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .image-preview {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin: 3px;
+    }
+    .image-preview-bar {
+        height: 55px;
+        width: 255px;
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-active {
+        border-style: outset;
+        border-color: gray;
+        border-width: 4px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .image-controller {
+        position: relative;
+        display: block;
+        width: 475px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-container {
+        width: 400px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .image-preview {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        margin: 3px;
+    }
+    .image-preview-bar {
+        height: 85px;
+        width: 405px;
+        margin-top: 7px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-active {
+        border-style: outset;
+        border-color: gray;
+        border-width: 4px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .image-controller {
+        position: relative;
+        display: block;
+        width: 610px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-container {
+        width: 550px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .image-preview {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 4px;
+    }
+    .image-preview-bar {
+        height: 105px;
+        width: 550px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-active {
+        border-style: outset;
+        border-color: gray;
+        border-width: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .image-controller {
+        position: relative;
+        display: block;
+        width: 750px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-container {
+        width: 700px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .image-preview {
+        display: inline-block;
+        width: 125px;
+        height: 125px;
+        margin: 5px;
+    }
+    .image-preview-bar {
+        height: 140px;
+        width: 700px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-active {
+        border-style: outset;
+        border-color: gray;
+        border-width: 6px;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .image-controller {
+        position: relative;
+        display: block;
+        width: 850px;
+        height: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-container {
+        width: 800px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .image-preview {
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        margin: 7px;
+    }
+    .image-preview-bar {
+        height: 155px;
+        width: 800px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-active {
+        border-style: outset;
+        border-color: gray;
+        border-width: 6px;
+        border-radius: 7px;
+    }
 }

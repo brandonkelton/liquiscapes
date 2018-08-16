@@ -120,19 +120,31 @@ export class GalleryComponent implements OnInit {
   }
 
   private getAdjustedIndex(index: number): number {
-    if (index < 0) return (this.currentImageCount + index); // this works because index will be negative
+    if (index < 0) return (this.currentImageCount + index); // index is negagtive
     if (index > (this.currentImageCount - 1)) return (index - this.currentImageCount);
     return index;
   }
 
   private getBeforeIndex(index: number): number {
-    if (index === 0) return this.currentImageCount - 1;
-    return index--;
+    let newIndex = index;
+    if (index === 0) {
+      newIndex = this.currentImageCount - 1;
+    } else {
+      newIndex = index - 1;
+    }
+    console.log(newIndex);
+    return newIndex;
   }
 
   private getAfterIndex(index: number): number {
-    if (index === this.currentImageCount - 1) return 0;
-    return index++;
+    let newIndex = index;
+    if (index === this.currentImageCount - 1) {
+      newIndex = 0;
+    } else {
+      newIndex = index + 1;
+    }
+    console.log(newIndex);
+    return newIndex;
   }
 
   ngOnInit() {
