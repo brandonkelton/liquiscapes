@@ -12,4 +12,12 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  callPhoneNumber(): void {
+    window.open('tel:3038611314', '_top');
+  }
+
+  sendEmail(): void {
+    window.open('mailto:dave@liquiscapes.com?subject=Consultation Request', '_top');
+  }
+
 }
