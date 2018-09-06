@@ -10,28 +10,28 @@ export class ImageViewerComponent implements OnInit {
 
   images: Array<LiquiImage> = new Array<LiquiImage>();
 
-  constructor() {
+  ngOnInit() {
     this.loadImages();
-    this.startSlide();
-   }
+    this.slideRight();
+  }
 
   loadImages(): void {
 
     const image1 = new LiquiImage();
-    image1.isActive = true;
-    image1.url = '../../assets/images/front-pic-1.jpg';
+    image1.url = '../../assets/images/front-pic-8-2.jpg';
 
     const image2 = new LiquiImage();
-    image2.url = '../../assets/images/front-pic-2.jpg';
+    image2.url = '../../assets/images/front-pic-5-2.jpg';
 
     const image3 = new LiquiImage();
-    image3.url = '../../assets/images/front-pic-3.jpg';
+    image3.url = '../../assets/images/front-pic-3-2.jpg';
 
     const image4 = new LiquiImage();
-    image4.url = '../../assets/images/front-pic-4.jpg';
+    image4.url = '../../assets/images/front-pic-4-2.jpg';
 
     const image5 = new LiquiImage();
-    image5.url = '../../assets/images/front-pic-5.jpg';
+    image5.isActive = true;
+    image5.url = '../../assets/images/front-pic-1-2.jpg';
 
     this.images.push(image1);
     this.images.push(image2);
@@ -118,14 +118,4 @@ export class ImageViewerComponent implements OnInit {
       image.wasPrevious = false;
     });
   }
-
-  private startSlide() {
-    this.imageCurrent.isActive = true;
-    this.slideRight();
-  }
-
-  ngOnInit() {
-    
-  }
-
 }

@@ -1,25 +1,27 @@
-<div class="top-bar">
-    <div class="month-selector-container">
-        <i (click)="monthBackward()" class="fa fa-arrow-left month-arrow"></i>
-        <span class="month-container month-text">
-            {{ currentImageGroup.monthString }} {{ currentImageGroup.year }}
-        </span>
-        <i (click)="monthForward()" class="fa fa-arrow-right month-arrow"></i>
+<div class="liqui-container">
+    <div class="top-bar">
+        <div class="month-selector-container">
+            <i (click)="monthBackward()" class="fa fa-arrow-left month-arrow"></i>
+            <span class="month-container month-text">
+                {{ currentImageGroup.monthString }} {{ currentImageGroup.year }}
+            </span>
+            <i (click)="monthForward()" class="fa fa-arrow-right month-arrow"></i>
+        </div>
     </div>
-</div>
-<div class="image-controller">
-    <div class="slider-left" (click)="imageBackward();">
-        <i class="fa fa-arrow-left image-arrow"></i>
+    <div class="image-controller">
+        <div class="slider-left" (click)="imageBackward();">
+            <i class="fa fa-arrow-left image-arrow"></i>
+        </div>
+        <div class="image-container">
+            <img class="image" src="{{currentImage.url}}"/>
+        </div>
+        <div class="slider-right" (click)="imageForward();">
+            <i class="fa fa-arrow-right image-arrow"></i>
+        </div> 
     </div>
-    <div class="image-container">
-        <img class="image" src="{{currentImage.url}}"/>
+    <div class="image-preview-bar">
+        <img *ngFor="let image of imageRange" 
+            (click)="setImageActive(image.index)"
+            class="image-preview {{ image.index === imageIndex ? 'image-active' : '' }}" src="{{ image.url }}"/>
     </div>
-    <div class="slider-right" (click)="imageForward();">
-        <i class="fa fa-arrow-right image-arrow"></i>
-    </div> 
-</div>
-<div class="image-preview-bar">
-    <img *ngFor="let image of imageRange" 
-        (click)="setImageActive(image.index)"
-        class="image-preview {{ image.index === imageIndex ? 'image-active' : '' }}" src="{{ image.url }}"/>
 </div>

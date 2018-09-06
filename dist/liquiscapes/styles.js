@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url('https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css');\r\n@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');\r\n.small-font {\r\n    font-size: 14px;\r\n}\r\n:root {\r\n    --liqui-background: #a6cfff;\r\n    --liqui-background-hover: #55a4ff;\r\n    --liqui-text: #000000;\r\n    --liqui-text-hover: #000000;\r\n    --liqui-border: #a6cfff;\r\n    --liqui-border-hover: #55a4ff;\r\n}\r\n"
+module.exports = "@import url('https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css');\r\n@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');\r\n.small-font {\r\n    font-size: 14px;\r\n}\r\n:root {\r\n    --liqui-background: #a6cfff;\r\n    --liqui-background-hover: #55a4ff;\r\n    --liqui-text: #000000;\r\n    --liqui-text-hover: #000000;\r\n    --liqui-border: #a6cfff;\r\n    --liqui-border-hover: #55a4ff;\r\n    --liqui-link: #0178ff;\r\n}\r\n"
 
 /***/ }),
 
